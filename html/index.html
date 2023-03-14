@@ -13,11 +13,37 @@
 	<nav>
 		<ul>
 			<li><a href="../html/index.html">Головна</a></li>
-			<li><a href="#">Про нас</a></li>
-			<li><a href="#">Товари</a></li>
-			<li><a href="#">Контакти</a></li>
+			<li><a href="#" data-modal="about-modal">Про нас</a></li>
+  			<li><a href="#" data-modal="products-modal">Товари</a></li>
+  			<li><a href="#" data-modal="contact-modal">Контакти</a></li>
 		</ul>
+
+		<!-- Модальные окна -->
+			<div id="about-modal" class="modal">
+				<div class="modal-content">
+				<h4>Про нас</h4>
+				<p>Текст модального окна про нас.</p>
+				<span class="close-modal">&times;</span>
+				</div>
+			</div>
+			
+			<div id="products-modal" class="modal">
+				<div class="modal-content">
+				<h4>Товари</h4>
+				<p>Текст модального окна про товары.</p>
+				<span class="close-modal">&times;</span>
+				</div>
+			</div>
+			
+			<div id="contact-modal" class="modal">
+				<div class="modal-content">
+				<h4>Контакты</h4>
+				<p>Текст модального окна про контакты.</p>
+				<span class="close-modal">&times;</span>
+				</div>
+			</div>
 	</nav>
+
 	<main>
 		<h1>Настільні ПК</h1>
 		<section class="products">
@@ -104,3 +130,5 @@
 			<!-- Другие товары -->
 		</section>
 	</main>
+	<script src="../js/script.js"></script>
+</body>
