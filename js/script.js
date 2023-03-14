@@ -10,47 +10,55 @@ var contactLink = document.querySelector('a[data-modal="contact-modal"]');
 
 // Функция для открытия модального окна
 function showModal(modal) {
-    modal.style.display = "block";
+  modal.style.display = "block";
 }
 
 // Функция для закрытия модального окна
 function closeModal(modal) {
-    modal.style.display = "none";
+  modal.style.display = "none";
 }
 
 // Обработчики событий для открытия модальных окон
 aboutLink.addEventListener('click', function() {
-    showModal(aboutModal);
+  showModal(aboutModal);
 });
 
 productsLink.addEventListener('click', function() {
-    showModal(productsModal);
+  showModal(productsModal);
 });
 
 contactLink.addEventListener('click', function() {
-    showModal(contactModal);
+  showModal(contactModal);
 });
 
 // Обработчики событий для закрытия модальных окон
-aboutModal.querySelector('.close').addEventListener('click', function() {
-    closeModal(aboutModal);
+aboutModal.querySelector('.close-modal').addEventListener('click', function() {
+  closeModal(aboutModal);
 });
 
-productsModal.querySelector('.close').addEventListener('click', function() {
-    closeModal(productsModal);
+productsModal.querySelector('.close-modal').addEventListener('click', function() {
+  closeModal(productsModal);
 });
 
-contactModal.querySelector('.close').addEventListener('click', function() {
-    closeModal(contactModal);
+contactModal.querySelector('.close-modal').addEventListener('click', function() {
+  closeModal(contactModal);
 });
 
 // Обработчик события для закрытия модальных окон при клике вне окна
 window.addEventListener('click', function(event) {
-    if (event.target == aboutModal) {
+  if (event.target == aboutModal) {
+    closeModal(aboutModal);
+  } else if (event.target == productsModal) {
+    closeModal(productsModal);
+  } else if (event.target == contactModal) {
+    closeModal(contactModal);
+  }});
+
+// Обработчик события для закрытия модальных окон при нажатии кливиши esc
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
       closeModal(aboutModal);
-    } else if (event.target == productsModal) {
       closeModal(productsModal);
-    } else if (event.target == contactModal) {
       closeModal(contactModal);
     }
   });
