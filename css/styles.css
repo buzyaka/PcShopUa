@@ -125,14 +125,21 @@ footer div {
 	margin-left: auto;
 }
 
-.about-we-modal-information {
+.about-we-modal-information,
+.products-modal-information,
+.contact-modal-information {
 	color: black;
 	font-size: large;
 	font-weight: 500;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
-.text-modal-about-we {
+.text-modal-about-we,
+.text-modal-products,
+.text-modal-contacts-info {
 	text-align: center;
 	margin-top: 1px;
 }
