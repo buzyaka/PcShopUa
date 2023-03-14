@@ -2,11 +2,13 @@
 var aboutModal = document.getElementById("about-modal");
 var productsModal = document.getElementById("products-modal");
 var contactModal = document.getElementById("contact-modal");
+var basketModal = document.querySelector('#basket-modal');
 
 // Получаем ссылки на элементы списка
 var aboutLink = document.querySelector('a[data-modal="about-modal"]');
 var productsLink = document.querySelector('a[data-modal="products-modal"]');
 var contactLink = document.querySelector('a[data-modal="contact-modal"]');
+var basketLink = document.querySelector('.basket-link');
 
 // Функция для открытия модального окна
 function showModal(modal) {
@@ -31,6 +33,12 @@ contactLink.addEventListener('click', function() {
   showModal(contactModal);
 });
 
+basketLink.addEventListener('click', function(e) {
+  e.preventDefault(); // запобігаємо переходу за посиланням
+  
+  basketModal.style.display = 'block'; // відображаємо модальне вікно
+});
+
 // Обработчики событий для закрытия модальных окон
 aboutModal.querySelector('.close-modal').addEventListener('click', function() {
   closeModal(aboutModal);
@@ -44,6 +52,10 @@ contactModal.querySelector('.close-modal').addEventListener('click', function() 
   closeModal(contactModal);
 });
 
+basketModal.querySelector('.close-modal').addEventListener('click', function() {
+  closeModal(basketModal);
+})
+
 // Обработчик события для закрытия модальных окон при клике вне окна
 window.addEventListener('click', function(event) {
   if (event.target == aboutModal) {
@@ -52,6 +64,8 @@ window.addEventListener('click', function(event) {
     closeModal(productsModal);
   } else if (event.target == contactModal) {
     closeModal(contactModal);
+  } else if (event.target == basketModal) {
+    closeModal(basketModal);
   }});
 
 // Обработчик события для закрытия модальных окон при нажатии кливиши esc
@@ -60,6 +74,7 @@ document.addEventListener('keydown', function(event) {
       closeModal(aboutModal);
       closeModal(productsModal);
       closeModal(contactModal);
+      closeModal(basketModal);
     }
   });
   

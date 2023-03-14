@@ -128,7 +128,8 @@ footer div {
 
 .about-we-modal-information,
 .products-modal-information,
-.contact-modal-information {
+.contact-modal-information,
+.basket-modal-information {
 	color: black;
 	font-size: large;
 	font-weight: 500;
@@ -140,9 +141,25 @@ footer div {
 
 .text-modal-about-we,
 .text-modal-products,
-.text-modal-contacts-info {
+.text-modal-contacts-info,
+.text-modal-basket {
 	text-align: center;
 	margin-top: 1px;
+	font-size: 20px;
+}
+
+.basket {
+	list-style-type: none;
+}
+
+.basket-link {
+	text-decoration: none; /* Убирает подчеркивание для ссылок */
+	color: papayawhip
+}
+
+.basket-link:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red;
 }
 
 .modal {
