@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PcShopUA</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="shortcut icon" href="/photoContent/pcLOGO.jpg" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="logo">PcShop &#127482;&#127462;</div>
+		<div class="cart">
+			<li class="basket"><a href="#" data-modal="basket-modal" class="basket-link"><b>Ваша корзина</b></a></li>
+		</div>
+		<!-- <form action="/search" method="GET">
+			<input type="text" name="query" placeholder="Поиск...">
+			<button type="submit">Найти</button>
+		  </form> -->	  
+	</header>
+	<nav>
+		<ul>
+			<li><a href="/html/generalPage.html">Головна</a></li>
+			<li><a href="#" data-modal="about-modal">Про нас</a></li>
+  			<li><a href="#" data-modal="products-modal">Товари</a></li>
+  			<li><a href="#" data-modal="contact-modal">Контакти</a></li>
+		</ul>
+
+		<!-- Модальные окна -->
+			<div id="about-modal" class="modal">
+				<div class="modal-content">
+				<span class="close-modal"><button class="btn-close">&times;</button></span>
+				<h4 class="text-modal-about-we">Про нас</h4>
+				<p>
+					<span class="about-we-modal-information">
+						Ми Українська компанія зі збирання ПК за найкращою ціною.
+						<br>Понад 10 років на ринку.
+						<br>Чудові ціни.
+						<br>Раді покупці!
+						<br>Слава Україні &#127482;&#127462;
+					</span>
+				</p>
+				</div>
+			</div>
+			
+			<div id="products-modal" class="modal">
+				<div class="modal-content">
+				<span class="close-modal"><button class="btn-close">&times;</button></span>
+				<h4 class="text-modal-products">Товари</h4>
+				<p>
+					<span class="products-modal-information">
+						Товари завжди є в наявності.
+						<br>Всі наші товари ви можете знайти тут.
+						<br>Гарантія 24 місяця з моменту придбання.
+					</span>
+				</p>
+				</div>
+			</div>
+			
+			<div id="contact-modal" class="modal">
+				<div class="modal-content">
+					<span class="close-modal"><button class="btn-close">&times;</button></span>
+				<h4 class="text-modal-contacts-info">Контакти</h4>
+				<p>
+					<span class="contact-modal-information">
+						Ми знаходимося за адресою : М.Черкаси, бул.Шевченка 777.
+						<br>[ Понеділок - П'ятниця : 09:00 - 21:00 ]
+						<br>[ Субота - Неділя : 11:00 - 19:00 ]
+						<br>Електронна адреса : pcShopUA@gmail.com
+						<br>Номери телефонів :
+						<br>+380(63)-777-77-77
+						<br>+380(73)-777-77-77
+						<br>+380(93)-777-77-77
+						<br>+380(67)-777-77-77
+						<br>+380(68)-777-77-77
+					</span>
+				</p>
+				</div>
+			</div>
+
+			<div id="basket-modal" class="modal">
+				<div class="modal-content">
+					<span class="close-modal"><button class="btn-close">&times;</button></span>
+				<h4 class="text-modal-basket">Ваша корзина</h4>
+				<p>
+					<span class="basket-modal-information">
+						<br>Товар 1 : ПК Armado 2000x
+						<br>Товар 2 : ПК Galacticus
+						<br>Товар 3 : ПК Powerking
+					</span>
+				</p>
+				</div>
+			</div>
+	</nav>
+
+	<main>
+		<form>
+			<input type="text" name="search" placeholder="Поиск...">
+			<button type="submit">Найти</button>
+		</form>	
+		<hr>	
+		<h1>Настільні ПК</h1>
+		<section class="products">
+			<div class="product">
+				<h2><b>Armado 2000x</b></h2>
+				<img src="/photoContent/pc1.jfif">
+				<p>
+					Процесор : Intel Core i9 13900 KF;
+					Відеокарта : RTX 4090 24GB;
+					Оперативна пам'ять : 64 GB DDR5-6000 Gaming;
+					Накопичувачі : 1TB NVMe Gen4 basic & 1TB NVMe SSD;
+					Материнська плата : PRIME Z690-A;
+					Корпус : Artline OVERLORD RGB ;
+					Блок живлення: 1000W 80+ Bronze ;
+					Охолодження процесора: WaterCooler 360mm ;
+				</p>
+				<a href="/html/pcProducts/pcArmado2000.html"><button class="buy">Детальніше</button></a>
+			</div>
+			<div class="product">
+				<h2><b>RhPhotos</b></h2>
+				<img src="/photoContent/pc2.jfif">
+				<p>Процесор : Intel Core i9 13100 F;
+					Відеокарта : RTX 4070 TI 36GB;
+					Оперативна пам'ять : 32 GB DDR5-6000;
+					Накопичувачі : 3TB NVMe Gen4 Turbo;
+					Материнська плата : PRIME B710;
+					Корпус : Nevada HARD+;
+					Блок живлення: 900W 80+ Gold ;
+					Охолодження процесора: WaterCooler 360mm ;
+				</p>
+				<a href="/html/pcProducts/pcRhPhotos.html"><button class="buy">Детальніше</button></a>
+			</div>
+			<div class="product">
+				<h2><b>HatecrimeSound</b></h2>
+				<img src="/photoContent/pc3.jfif">
+				<p>Процесор : Intel Core i9 12100;
+					Відеокарта : RTX 3090 18GB;
+					Оперативна пам'ять : 64 GB DDR5-6000 ;
+					Накопичувачі : 2TB NVMe SSD;
+					Материнська плата : Asus G902+;
+					Корпус : GoldFun extreme ;
+					Блок живлення: 800W ;
+					Охолодження процесора: WaterCooler 360mm ;
+				</p>
+				<a href="/html/pcProducts/pcHatecrimeSound.html"><button class="buy">Детальніше</button></a>
+			</div>
+			<div class="product">
+				<h2><b>RedDeath</b></h2>
+				<img src="/photoContent/pc4.jfif">
+				<p>Процесор : Intel Core i9 13900 F;
+					Відеокарта : RTX 3090 TI 36GB;
+					Оперативна пам'ять : 128 GB DDR5-6000 OverClock;
+					Накопичувачі : 5TB NVMe Gen4 basic & 2TB NVMe SSD;
+					Материнська плата : PRIME B610-G;
+					Корпус : GoldHouse Ukraine;
+					Блок живлення: 1200W 80+ Gold ;
+					Охолодження процесора: WaterCooler 360mm ;
+				</p>
+				<a href="/html/pcProducts/pcRedDeath.html"><button class="buy">Детальніше</button></a>
+			</div>
+			<div class="product">
+				<h2><b>Galacticus</b></h2>
+				<img src="/photoContent/pc5.jfif">
+				<p>Процесор : Intel Core i9 12100 QW;
+					Відеокарта : RTX 4090 TI 36GB;
+					Оперативна пам'ять : 128 GB DDR5-6000 Gaming;
+					Накопичувачі : 10TB NVMe Gen4 basic & 2TB NVMe SSD;
+					Материнська плата : PRIME G1020 platinum+;
+					Корпус : Asus ROG Game ;
+					Блок живлення: 1500W 80+ Platinum ;
+					Охолодження процесора: WaterCooler 360mm ;
+				</p>
+				<a href="/html/pcProducts/pcGalacticus.html"><button class="buy">Детальніше</button></a>
+			</div>
+			<div class="product">
+				<h2><b>Powerking</b></h2>
+				<img src="/photoContent/pc6.jfif">
+				<p>Процесор : Intel Core i9 13900 KH;
+					Відеокарта : RTX 4080 24GB;
+					Оперативна пам'ять : 64 GB DDR5-6000 Gaming;
+					Накопичувачі : 5TB NVMe Gen4 basic & 1TB NVMe SSD;
+					Материнська плата : Intel H210+;
+					Корпус : HrogRGB Gold ;
+					Блок живлення: 900W 80+ Silver ;
+					Охолодження процесора: WaterCooler 360mm ;
+				</p>
+				<a href="/html/pcProducts/pcPowerking.html"><button class="buy">Детальніше</button></a>
+			</div>
+		</section>
+		<hr>
+	</main>
+	<script src="../js/script.js"></script>
+</body>

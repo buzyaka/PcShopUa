@@ -238,3 +238,66 @@ form {
 	cursor: pointer;
   }
   
+  .gen-text {
+	color: white;
+	text-align: center
+  }
+
+  .buttons button {
+	display: flex;
+	background-color: gray;
+	color: black;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  /* Styles for the MAIN PAGE */
+
+  .images {
+	display: flex;
+	justify-content: center;
+	margin: 3cm
+  }
+  
+  .image-container {
+	margin: 2cm;
+	text-align: center;
+  }
+  
+  .image-container img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+  }
+  
+  .image-container button {
+	background-color: gray;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .image-container:hover img {
+	transform: scale(1.1);
+  }
+  
+  .image-container:hover button {
+	background-color: red;
+  }
+  
+  .btn-Pc-Products,
+  .btn-Mouse-Products,
+  .btn-Keyboard-Products {
+	border-color: #000;
+	border-radius: 1cm;
+  }
+
+  .text-btn-products {
+	font-size: larger;
+	font-weight: 700;
+  }
