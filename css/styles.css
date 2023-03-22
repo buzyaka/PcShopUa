@@ -258,7 +258,7 @@ form {
   .images {
 	display: flex;
 	justify-content: center;
-	margin: 3cm
+	margin: 1cm
   }
   
   .image-container {
