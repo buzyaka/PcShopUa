@@ -212,3 +212,29 @@ footer div {
 	background-color: #000;
 	color: white;
 }
+
+/* Search */
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  input[type="text"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+  

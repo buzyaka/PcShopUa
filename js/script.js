@@ -77,4 +77,11 @@ document.addEventListener('keydown', function(event) {
       closeModal(basketModal);
     }
   });
-  
+
+  // Search
+  const form = document.querySelector('form');
+  form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const searchQuery = form.elements.search.value;
+  // тут буде запрос до виконання в базі даних або API для отримання результатів пошука та відображення на стронці 
+});
