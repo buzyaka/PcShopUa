@@ -1,26 +1,26 @@
-// Получаем ссылки на модальные окна
+// Отримуємо силки на модальні вікна
 var aboutModal = document.getElementById("about-modal");
 var productsModal = document.getElementById("products-modal");
 var contactModal = document.getElementById("contact-modal");
 var basketModal = document.querySelector('#basket-modal');
 
-// Получаем ссылки на элементы списка
+// Отримуємо силки на елементи списку
 var aboutLink = document.querySelector('a[data-modal="about-modal"]');
 var productsLink = document.querySelector('a[data-modal="products-modal"]');
 var contactLink = document.querySelector('a[data-modal="contact-modal"]');
 var basketLink = document.querySelector('.basket-link');
 
-// Функция для открытия модального окна
+// Ф-ція для відкриття модального вікна
 function showModal(modal) {
   modal.style.display = "block";
 }
 
-// Функция для закрытия модального окна
+// Ф-ція для закриття модального вікна
 function closeModal(modal) {
   modal.style.display = "none";
 }
 
-// Обработчики событий для открытия модальных окон
+// Обробник подій для відкриття модальних вікон
 aboutLink.addEventListener('click', function() {
   showModal(aboutModal);
 });
@@ -39,7 +39,7 @@ basketLink.addEventListener('click', function(e) {
   basketModal.style.display = 'block'; // відображаємо модальне вікно
 });
 
-// Обработчики событий для закрытия модальных окон
+// Обробник подій для закриття модальних вікон
 aboutModal.querySelector('.close-modal').addEventListener('click', function() {
   closeModal(aboutModal);
 });
@@ -56,7 +56,7 @@ basketModal.querySelector('.close-modal').addEventListener('click', function() {
   closeModal(basketModal);
 })
 
-// Обработчик события для закрытия модальных окон при клике вне окна
+// Обробник подій для закриття модальних вікон під час натискання зовні вікна
 window.addEventListener('click', function(event) {
   if (event.target == aboutModal) {
     closeModal(aboutModal);
@@ -68,7 +68,7 @@ window.addEventListener('click', function(event) {
     closeModal(basketModal);
   }});
 
-// Обработчик события для закрытия модальных окон при нажатии кливиши esc
+// Обробник подій для закриття модальних вікон під час натискання клавіши Esc
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape") {
       closeModal(aboutModal);
@@ -78,7 +78,7 @@ document.addEventListener('keydown', function(event) {
     }
   });
 
-  // Search
+  // Пошук
   const form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
   event.preventDefault();
