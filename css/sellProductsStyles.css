@@ -93,4 +93,39 @@
     font-size: 16px;
     margin-bottom: 10px;
   }
-  
+
+  .left-column-hator-darkside img {
+    width: 100%;
+    display: block;
+  }
+
+  .left-column-hator-darkside,
+  .left-column-hator-darkside-rgb,
+  .left-column-cougar-armor,
+  .left-column-DX-racer-pSeries,
+  .left-column-gtRacer-x-2324,
+  .left-column-razer-enki {
+    margin-left: 3cm;
+    margin-bottom: 7cm;
+  }
+
+  .left-column-RZTK-eDesk,
+  .left-column-barsky-eSports {
+    justify-content: center;
+    margin-left: 1.5cm;
+  }
+
+  .left-column-DXRacer-dxlt {
+    justify-content: center;
+    margin-left: 2cm;
+  }
+
+  .left-column-DXRacer-GD003n,
+  .left-column-1stPlayer {
+    justify-content: center;
+    margin-left: 3.5cm;
+  }
+
+  .right-column-table {
+    text-align: center;
+  }
